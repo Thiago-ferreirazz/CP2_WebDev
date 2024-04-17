@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #3D3832;
+}
+
+:root {
+    --color-1:#D1F0D8;
+    --color-2:#3D3832;
+    --color-3:#EDD5B7;
+}
+
+body {
+    height: 100vh;
+}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+li:hover {
+    color: #000;
+}
+
+#cart {
+    font-size: 1.5rem;
+}
+
+section.home {
+    background-color: var(--color-1);
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+section.home > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.home img {
+    width: 30%;
+}
+
+section.home button {
+    width: max-content;
+    padding: 0.5rem 3rem;
+    border: none;
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+section.home button:hover {
+    color: var(--color-3);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+section.home > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.wines {
+    
+}
