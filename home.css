@@ -105,13 +105,24 @@ h1 {
     gap: 1rem;
 }
 
-div.wine-info > a,i {
+div.wine-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+div.wine-buttons > a,i, button {
     padding: 0.2rem 0.8rem;
     display: flex;
+    border: none;
     align-items: center;
     width: max-content;
     background-color: var(--color-2);
     color: var(--color-1);
+}
+
+div.wine-buttons > a,i, button:hover {
+    color: var(--color-3);
+    cursor: pointer;
 }
 
 div.wine-info > a:hover {
