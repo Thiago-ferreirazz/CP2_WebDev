@@ -84,5 +84,41 @@ h1 {
 }
 
 .wines {
-    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 6rem;
+}
+
+.wine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0.5rem;
+    background-color: var(--color-1);
+}
+
+.wine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div.wine-info > a,i {
+    padding: 0.2rem 0.8rem;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+div.wine-info > a:hover {
+    color: var(--color-3);
+    transition: 200ms;
+}
+
+.wine-info > p {
+    width: 70%;
 }
