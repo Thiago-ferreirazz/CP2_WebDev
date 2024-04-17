@@ -14,6 +14,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     event.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
+    console.log(event)
     if (username === "1234" && password === "1234") {
         alert("Login bem-sucedido!");
         // Redirecionar para a página do usuário logado
