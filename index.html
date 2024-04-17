@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Vinhos</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela inicial -->
+    <div class="age-verification">
+        <h2>Você tem mais de 18 anos?</h2>
+        <button onclick="checkAge()">Sim</button>
+    </div>
+
+    <!-- Página de login -->
+    <div class="login-page hidden">
+        <h2>Faça login</h2>
+        <form id="login-form">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Home page -->
+    <div class="home-page hidden">
+        <h1>Bem-vindo à nossa loja de vinhos!</h1>
+        <div class="wine-list">
+            <div class="wine">
+                <h2>Vinho 1</h2>
+                <p>Descrição do Vinho 1</p>
+                <button onclick="addToCart('Vinho 1')">Comprar</button>
+            </div>
+            <!-- Adicionar mais vinhos aqui -->
+        </div>
+    </div>
+
+    <!-- Página de detalhes do vinho -->
+    <div class="wine-details-page hidden">
+        <h2>Detalhes do Vinho</h2>
+        <p>Descrição detalhada do vinho selecionado</p>
+        <button onclick="addToCart('Vinho Selecionado')">Adicionar ao Carrinho</button>
+    </div>
+
+    <!-- Pop-up de sucesso -->
+    <div class="popup hidden">
+        <p>Adicionado ao carrinho com sucesso!</p>
+    </div>
+
+    <!-- JavaScript para funcionalidades -->
+    <script src="script.js"></script>
+</body>
+</html>
