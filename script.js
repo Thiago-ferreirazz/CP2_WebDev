@@ -1,11 +1,12 @@
-// Função para verificar a idade
-function checkAge() {
-    var isOver18 = confirm("Você tem mais de 18 anos?");
-    if (isOver18) {
-        showHomePage();
-    } else {
-        window.location.href = "https://vaganacreche.sme.prefeitura.sp.gov.br/";
-    }
+ // Função para verificar a idade
+ function checkAge() {
+    // Se o botão "Sim" for clicado, continuar na página atual
+    alert("Você pode continuar navegando!");
+}
+
+function checkAge2() {
+    // Se o botão "Não" for clicado, redirecionar para outro site
+    window.location.href = "https://vaganacreche.sme.prefeitura.sp.gov.br/";
 }
 
 // Lógica para exibir página de login
