@@ -1,14 +1,3 @@
-// Página inicial
-var idade = prompt("Você tem mais de 18 anos? (sim/nao)");
-
-if (idade.toLowerCase() === "nao") {
-    // Redireciona para esse link
-    window.location.href = "https://lojadodivo.com/products/jm-bolsonaro-eau-de-pertum";
-} else {
-    // Redireciona para pagina principal
-    window.location.href = "./home.html";
-}
-
 // Página de detalhes do vinho
 function comprar() {
     alert("Adicionado ao carrinho com sucesso!");
@@ -25,7 +14,7 @@ function calcularPreco(qtd) {
         desconto = 0.1; // 10% de desconto
     }
 
-    var precoTotal = (precoPorGarrafa * qtd) * (1 - desconto); // Aplica o desconto se houver
+    var precoTotal = (precoPorGarrafa * qtd) * (1 - desconto); // Aplica o desconto
     document.getElementById("total").innerHTML = "Total: R$" + precoTotal.toFixed(2);
 }
 
@@ -47,7 +36,6 @@ function sugestaoComida(vinho) {
         "Cabernet Sauvignon": ["Carnes vermelhas grelhadas", "Queijos curados"],
         "Chardonnay": ["Frango assado", "Frutos do mar"],
         "Merlot": ["Massas com molho de carne", "Queijos macios"],
-        // Adicione mais sugestões aqui conforme necessário
     };
 
     var listaSugestoes = sugestoes[vinho];
