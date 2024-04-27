@@ -7,56 +7,37 @@
         <script src="script/script.js" defer></script>
     </head>
     <body>
-        <!DOCTYPE html>
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <title>Vinho Shop - Detalhes do Vinho</title>
-            </head>
-            <body>
-                <h1>Detalhes do Vinho</h1>
-                <h2>Cabernet Sauvignon</h2>
-                <button onclick="comprar()">Comprar</button>
-                <label for="qtd">Quantidade:</label>
-                <input
-                    type="number"
-                    id="qtd"
-                    onchange="calcularPreco(this.value)"
-                />
-                <div id="total"></div>
+        <h1>Detalhes do Vinho</h1>
+        <h2>Cabernet Sauvignon</h2>
+        <button onclick="comprar()">Comprar</button>
+        <label for="qtd">Quantidade:</label>
+        <input type="number" id="qtd" onchange="calcularPreco(this.value)" />
+        <div id="total"></div>
 
-                <h1>Login</h1>
-                <label for="username">Usuário:</label>
-                <input type="text" id="username" /><br />
-                <label for="password">Senha:</label>
-                <input type="password" id="password" /><br />
-                <button onclick="login()">Login</button>
+        <h1>Login</h1>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" /><br />
+        <label for="password">Senha:</label>
+        <input type="password" id="password" /><br />
+        <button onclick="login()">Login</button>
 
-                <h1>Sugestões de Comida</h1>
-                <select id="vinho" onchange="sugestaoComida(this.value)">
-                    <option value="Cabernet Sauvignon">
-                        Cabernet Sauvignon
-                    </option>
-                    <option value="Chardonnay">Chardonnay</option>
-                    <option value="Merlot">Merlot</option>
-                </select>
-                <p id="sugestoes"></p>
+        <h1>Sugestões de Comida</h1>
+        <select id="vinho" onchange="sugestaoComida(this.value)">
+            <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
+            <option value="Chardonnay">Chardonnay</option>
+            <option value="Merlot">Merlot</option>
+        </select>
+        <p id="sugestoes"></p>
 
-                <h1>Formulário de Contato</h1>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" /><br />
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" /><br />
-                <label for="email">Email:</label>
-                <input type="email" id="email" /><br />
-                <label for="mensagem">Mensagem:</label><br />
-                <textarea id="mensagem"></textarea><br />
-                <button onclick="enviarMensagem()">Enviar</button>
-            </body>
-        </html>
+        <h1>Formulário de Contato</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" /><br />
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" /><br />
+        <label for="mensagem">Mensagem:</label><br />
+        <textarea id="mensagem"></textarea><br />
+        <button onclick="enviarMensagem()">Enviar</button>
     </body>
 </html>
