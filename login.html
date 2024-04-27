@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | Vinheira Agnello</title>
+        <!-- Adiciona tailwind CSS ao projeto -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Adiciona o script.js ao programa -->
+        <script src="script/script.js" defer></script>
+    </head>
+    <body>
+        <div class="max-w-5xl m-auto">
+            <header class="py-5 flex justify-between mb-20">
+                <span class="text-2xl">Vinheria Agnello</span>
+                <nav>
+                    <ul class="flex gap-8">
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="home.html">Detalhes</a>
+                        </li>
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="contato.html">Contato</a>
+                        </li>
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+                <h1 class="text-4xl font-light mb-8">Login</h1>
+                <label for="username" class="block">Usuário:</label>
+                <input type="text" id="username" class="rounded border outline-none border-red-100 px-3" /><br />
+                <label for="password" class="block">Senha:</label>
+                <input type="password" id="password" class="rounded border outline-none border-red-100 px-3" /><br />
+                <button onclick="login()" class="mt-8 bg-red-100 rounded py-1 px-2">Login</button>
+        </div>
+        <!-- Pagina de login -->
+    </body>
+</html>

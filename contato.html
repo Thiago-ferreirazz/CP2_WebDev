@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato | Vinheria Agnello</title>
+        <!-- Adiciona tailwind CSS ao projeto -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Adiciona o script.js ao programa -->
+        <script src="script/script.js" defer></script>
+    </head>
+    <body>
+        <div class="max-w-5xl m-auto">
+            <header class="py-5 flex justify-between mb-20">
+                <span class="text-2xl">Vinheria Agnello</span>
+                <nav>
+                    <ul class="flex gap-8">
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="home.html">Detalhes</a>
+                        </li>
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="contato.html">Contato</a>
+                        </li>
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Formulario de contato -->
+            <h1 class="text-4xl font-light mb-8">Formulário de Contato</h1>
+            <label for="nome" class="block">Nome:</label>
+            <input type="text" id="nome" class="rounded border border-red-100 outline-none px-3" /><br />
+            <label for="telefone" class="block">Telefone:</label>
+            <input type="text" id="telefone" class="rounded border border-red-100 outline-none px-3" /><br />
+            <label for="email" class="block">Email:</label>
+            <input type="email" id="email" class="rounded border border-red-100 outline-none px-3" /><br />
+            <label for="mensagem" class="block">Mensagem:</label><br />
+            <textarea id="mensagem" class="rounded border border-red-100 outline-none px-3"></textarea><br />
+            <button onclick="enviarMensagem()" class="mt-8 bg-red-100 rounded py-1 px-2">Enviar</button>
+        </div>
+    </body>
+</html>
