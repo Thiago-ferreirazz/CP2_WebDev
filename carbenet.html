@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes do Vinho - Cabernet Sauvignon</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"> <!-- Se tiver um arquivo CSS -->
+    <script src="/script/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-light">Detalhes do Vinho</h1>
+        <h2 class="text-4xl">Cabernet Sauvignon</h2>
+        
+        <div class="informacoes">
+            <h3 class="text-2xl">Descrição</h3>
+            <p>
+                O Cabernet Sauvignon é um dos vinhos tintos mais populares e reconhecidos em todo o mundo. 
+                Conhecido por seu sabor intenso e notas de frutas escuras como cassis, amoras e cerejas, ele 
+                também tem características de taninos firmes e potencial de envelhecimento. Comumente envelhecido 
+                em barris de carvalho, o que adiciona notas de baunilha e especiarias.
+            </p>
+        </div>
+        
+        <div class="caracteristicas">
+            <h3 class="text-2xl">Características do Vinho</h3>
+            <ul>
+                <li>Região de origem: Bordeaux, França</li>
+                <li>Graduação alcoólica: 13.5% - 14.5%</li>
+                <li>Cor: Vermelho escuro, quase roxo</li>
+                <li>Notas de sabor: Frutas escuras, tabaco, carvalho</li>
+                <li>Combinando com: Carnes vermelhas, queijos fortes, massas com molho vermelho</li>
+            </ul>
+        </div>
+        
+        <div class="curiosidades">
+            <h3 class="text-2xl">Curiosidades</h3>
+            <p>
+                O Cabernet Sauvignon é uma das variedades de uva mais cultivadas em todo o mundo. Sua origem está 
+                no cruzamento entre Cabernet Franc e Sauvignon Blanc, e é uma das uvas principais dos blends de Bordeaux.
+            </p>
+        </div>
+        <label for="qtd">Quantidade:</label>
+                <input
+                    type="number"
+                    id="qtd"
+                    min="0"
+                    class="border rounded border-red-100 outline-none px-4 w-1/5"
+                />
+                <button onclick="comprar()" class="bg-red-100 py-1 px-2 rounded">Comprar</button>
+                <!-- Cupom -->
+                <section class="cupom">
+                    <label for="cupom">Cupom: </label>
+                    <input type="text" id="cupom" class="border rounded border-red-100 outline-none px-4 w-1/5" >
+                    <button class="bg-red-100 py-1 px-2 rounded" onclick="cupom()">Cupom</button>
+                </section>
+                <!-- Total -->
+               <section class="total">
+                   <h2>Total</h2>
+                   <p id="total"></p>
+               </section>
+
+        <div class="acoes">
+            <button id="voltar-btn" class="border rounded border-red-100 px-4 py-2" onclick="window.location.href='detalhes.html'">Voltar</button>
+            <button id="comprar-btn" class="border rounded border-green-100 px-4 py-2 bg-green-200">Comprar</button>
+        </div>
+    </div>
+</body>
+</html>

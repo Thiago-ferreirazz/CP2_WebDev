@@ -34,7 +34,14 @@
             <!-- Detalhes do vinho -->
             <div class="space-y-8 gap-5">
                 <h1 class="text-3xl font-light">Detalhes do Vinho</h1>
-                <h2 class="text-4xl">Cabernet Sauvignon</h2>
+                <h2 class="text-4xl">Selecione o Tipo de Vinho</h2>
+                    <div class="flex space-x-4">
+                        <button id="cabernet-btn" class="border rounded border-red-100 px-4 py-2" onclick="window.location.href='carbenet.html'" data-preco-por-garrafa="25">Cabernet</button>
+                        <button id="chardonnay-btn" class="border rounded border-red-100 px-4 py-2">Chardonnay</button>
+                        <button id="merlot-btn" class="border rounded border-red-100 px-4 py-2">Merlot</button>
+                    </div>
+                </div>
+                
                 <label for="qtd">Quantidade:</label>
                 <input
                     type="number"
