@@ -17,13 +17,16 @@
                 <nav>
                     <ul class="flex gap-8">
                         <li class="hover:bg-red-200 p-1 rounded">
-                            <a href="home.html">Detalhes</a>
+                            <a href="detalhes.html">Detalhes</a>
                         </li>
                         <li class="hover:bg-red-200 p-1 rounded">
                             <a href="contato.html">Contato</a>
                         </li>
                         <li class="hover:bg-red-200 p-1 rounded">
                             <a href="login.html">Login</a>
+                        </li>
+                        <li class="hover:bg-red-200 p-1 rounded">
+                            <a href="carrinho.html">Carrinho</a>
                         </li>
                     </ul>
                 </nav>
@@ -36,11 +39,23 @@
                 <input
                     type="number"
                     id="qtd"
-                    onchange="calcularPreco(this.value)"
+                    min="0"
                     class="border rounded border-red-100 outline-none px-4 w-1/5"
                 />
                 <button onclick="comprar()" class="bg-red-100 py-1 px-2 rounded">Comprar</button>
-                <div id="total"></div>
+                <!-- Cupom -->
+                <section class="cupom">
+                    <label for="cupom">Cupom: </label>
+                    <input type="text" id="cupom" class="border rounded border-red-100 outline-none px-4 w-1/5" >
+                    <button class="bg-red-100 py-1 px-2 rounded" onclick="cupom()">Cupom</button>
+
+
+                </section>
+                 <!-- Total -->
+                <section class="total">
+                    <h2>Total</h2>
+                    <p id="total"></p>
+                </section>
             </div>
 
             <!-- Sugestoes de comida -->
