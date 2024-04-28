@@ -6,5 +6,5 @@ if (idade.toLowerCase() === "nao") {
     window.location.href = "https://lojadodivo.com/products/jm-bolsonaro-eau-de-pertum";
 } else {
     // Redireciona para pagina principal
-    window.location.href = "/home.html";
+    window.location.href = "/detalhes.html";
 }
