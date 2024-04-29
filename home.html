@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vinheira Agnello | Home</title>
+        <title> Home | Vinheira Agnello</title>
         <!-- Adiciona tailwind CSS ao projeto -->
         <script src="https://cdn.tailwindcss.com"></script>
         <!-- Adiciona o script.js ao programa -->
@@ -17,7 +17,7 @@
                 <nav>
                     <ul class="flex gap-8">
                         <li class="hover:bg-red-200 p-1 rounded">
-                            <a href="detalhes.html">Detalhes</a>
+                            <a href="home.html">Detalhes</a>
                         </li>
                         <li class="hover:bg-red-200 p-1 rounded">
                             <a href="contato.html">Contato</a>
@@ -33,33 +33,20 @@
             </header>
             <!-- Detalhes do vinho -->
             <div class="space-y-8 gap-5">
-                <h1 class="text-3xl font-light">Detalhes do Vinho</h1>
-                <h2 class="text-4xl">Cabernet Sauvignon</h2>
-                <label for="qtd">Quantidade:</label>
-                <input
-                    type="number"
-                    id="qtd"
-                    min="0"
-                    class="border rounded border-red-100 outline-none px-4 w-1/5"
-                />
-                <button onclick="comprar()" class="bg-red-100 py-1 px-2 rounded">Comprar</button>
-                <!-- Cupom -->
-                <section class="cupom">
-                    <label for="cupom">Cupom: </label>
-                    <input type="text" id="cupom" class="border rounded border-red-100 outline-none px-4 w-1/5" >
-                    <button class="bg-red-100 py-1 px-2 rounded" onclick="cupom()">Cupom</button>
+                <h1 class="text-3xl font-light">Menu de Vinhos</h1>
+                <h2 class="text-4xl">Selecione o Vinho que deseja</h2>
+                    <div class="flex space-x-4">
+                        <button id="cabernet-btn" 
+                        class="border rounded border-red-100 px-4 py-2" 
+                        onclick="window.location.href='carbenet.html' "
+                        data-preco-por-garrafa="25" >Cabernet Sauvignon</button>
 
-
-                </section>
-                 <!-- Total -->
-                <section class="total">
-                    <h2>Total</h2>
-                    <p id="total"></p>
-                </section>
-            </div>
-
+                        <button id="chardonnay-btn" class="border rounded border-red-100 px-4 py-2">Chardonnay</button>
+                        <button id="merlot-btn" class="border rounded border-red-100 px-4 py-2">Merlot</button>
+                    </div>
+                </div>
             <!-- Sugestoes de comida -->
-            <div class="space-y-4">
+            <!-- <div class="space-y-4">
                 <h1>Sugestões de Comida:</h1>
                 <select id="vinho" onchange="sugestaoComida(this.value)" class="bg-red-100 p-1 rounded">
                     <option value="Cabernet Sauvignon">Cabernet Sauvignon</option>
@@ -67,7 +54,7 @@
                     <option value="Merlot">Merlot</option>
                 </select>
                 <p id="sugestoes" class="text-2xl font-light"></p>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>

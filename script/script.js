@@ -42,17 +42,22 @@ function login() {
 }
 
 // Sugestão de combinações de comida
-function sugestaoComida(vinho) {
+function paginaVinho(vinho) {
     var sugestoes = {
         "Cabernet Sauvignon": ["Carnes vermelhas grelhadas", "Queijos curados"],
         "Chardonnay": ["Frango assado", "Frutos do mar"],
         "Merlot": ["Massas com molho de carne", "Queijos macios"],
     };
+    // Var que muda o texto no Parafgrado descrição por esse array dependendo da escolha no select
+    var descricao = {
+        "Cabernet Sauvignon": ["O Cabernet Sauvignon é um dos vinhos tintos mais populares e reconhecidos em todo o mundo. Conhecido por seu sabor intenso e notas de frutas escuras como cassis, amoras e cerejas, ele também tem características de taninos firmes e potencial de envelhecimento. Comumente envelhecido em barris de carvalho, o que adiciona notas de baunilha e especiarias."],
+        "Chardonnay": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis commodi nisi cum? Nam, fugiat non repellendus quaerat voluptate nulla dolores expedita, ipsum veniam dolore est cum aperiam, quo vel fuga!"],
+        "Merlot": ["Top"]
+    }
+    document.getElementById("descricao").innerHTML = descricao[vinho];
+    document.getElementById("sugestoes").innerHTML = "Sugestões de comida: " + sugestoes[vinho].join(", ");
 
-    var listaSugestoes = sugestoes[vinho];
-    document.getElementById("sugestoes").innerHTML = "Sugestões de comida: " + listaSugestoes.join(", ");
 }
-
 // Formulário de contato
 function enviarMensagem() {
     alert("Mensagem enviada com sucesso!");
