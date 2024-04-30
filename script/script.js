@@ -19,16 +19,23 @@ function comprar() {
 }
 
 //Printa a mensagem se o cupom for adicionado
+var cupom_usado = 0
 function cupom(){
-    var cupom = document.getElementById("cupom").value;
-    if (cupom === "FIAP2024") {
-        desconto = 0.1; // 10% de desconto
-        alert("Cumpom Adicionado! Voce tem 10% de desconto.")
+        
+        var cupom = document.getElementById("cupom").value;
+        if (cupom === "FIAP2024" && cupom_usado === 0) {
+            desconto = 0.1; // 10% de desconto
+            alert("Cumpom Adicionado! Voce tem 10% de desconto.")
+            compraTotal -= compraTotal * desconto;
+            document.getElementById("total").innerHTML = "R$" + compraTotal;
+            cupom_usado = 1
+        }
+        else{
+            alert("Cumpom Invalido!")
+        }
+        
+        
     }
-    else{
-        alert("Cumpom Invalido!")
-    }
-}
 // Página de login
 function login() {
     var username = document.getElementById("username").value;
@@ -39,6 +46,7 @@ function login() {
     } else {
         alert("Login inválido. Tente novamente.");
     }
+    
 }
 
 // Sugestão de combinações de comida
@@ -61,4 +69,11 @@ function paginaVinho(vinho) {
 // Formulário de contato
 function enviarMensagem() {
     alert("Mensagem enviada com sucesso!");
+}
+
+// Botão comprar
+function zera(){
+    document.getElementById("total").innerHTML = "R$" + 0;
+    alert("Produto comprado com sucesso!")
+
 }
